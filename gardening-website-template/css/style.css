@@ -844,7 +844,7 @@ tsting */
   }
 
   .layer {
-    background-image: url('/gardening-website-template/img/layer.svg');
+    background-image: url('img/layer.svg');
   }
 /* testing button */
 
@@ -939,24 +939,24 @@ tsting */
 /* layput 1 images ------------------------------------------------------------------- */
 
 #child1 {
-    background-image: url(/gardening-website-template/img/gardens/1.jpg);
+    background-image: url(img/gardens/1.jpg);
 }
 
 
 #layout1-child2 {
-    background-image: url(/gardening-website-template/img/gardens/2.jpg);
+    background-image: url(img/gardens/2.jpg);
 }
 
 #layout1-child3 {
-    background-image: url(/gardening-website-template/img/gardens/3.jpg);
+    background-image: url(img/gardens/3.jpg);
 }
 
 #layout1-child4 {
-    background-image: url(/gardening-website-template/img/gardens/4.jpg);
+    background-image: url(img/gardens/4.jpg);
 }
 
 #layout1-child5 {
-    background-image: url(/gardening-website-template/img/gardens/5.jpg);
+    background-image: url(img/gardens/5.jpg);
 }
 
 .img-response  {
@@ -988,11 +988,11 @@ tsting */
 
 
 #special-child{
-    background-image: url(/gardening-website-template/img/gardens/7.jpg);
+    background-image: url(img/gardens/7.jpg);
 } 
 
 #special-child4{
-    background-image: url(/gardening-website-template/img/gardens/8.jpg);
+    background-image: url(img/gardens/8.jpg);
 }
 
 /* hover effecr in it  */
@@ -1047,16 +1047,16 @@ tsting */
 
 /* Apply background images */
 #layout1-child2::before {
-    background-image: url(/gardening-website-template/img/gardens/2.jpg);
+    background-image: url(img/gardens/2.jpg);
 }
 #layout1-child3::before {
-    background-image: url(/gardening-website-template/img/gardens/3.jpg);
+    background-image: url(img/gardens/3.jpg);
 }
 #layout1-child4::before {
-    background-image: url(/gardening-website-template/img/gardens/4.jpg);
+    background-image: url(img/gardens/4.jpg);
 }
 #layout1-child5::before {
-    background-image: url(/gardening-website-template/img/gardens/5.jpg);
+    background-image: url(img/gardens/5.jpg);
 }
 
 /* Apply the zoom effect on hover */
@@ -1226,7 +1226,7 @@ img .img-joke{
     top: 50px;
 	grid-area: 1 / 2 / 6 / 4;
     border: 10px solid white;
-    background-image: url(/gardening-website-template/img/gardens/yaoni.jpg);
+    background-image: url(img/gardens/yaoni.jpg);
 }
 #div3 {
 	grid-area: 3 / 4 / 10 / 8;
@@ -1238,7 +1238,7 @@ img .img-joke{
 }
 #div4 {
 	grid-area: 6 / 2 / 9 / 4;
-    background-image: url(/gardening-website-template/img/gardens/award.jpg);
+    background-image: url(img/gardens/award.jpg);
     border: 10px solid white;
     z-index: 2;
 
@@ -2134,7 +2134,7 @@ img .img-joke{
     -webkit-appearance: none;
     height: 40px;
     width: 40px;
-    background: url("/gardening-website-template/img/slider-icon.svg"), rgba(255, 255, 255, 0.3);
+    background: url("img/slider-icon.svg"), rgba(255, 255, 255, 0.3);
     border: 3px solid #ffffff;
     border-radius: 50%;
     background-size: contain;
