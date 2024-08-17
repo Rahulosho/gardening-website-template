@@ -852,56 +852,55 @@ tsting */
 
 
 /* LAYOUT 1-------------------- */
-.layout-parent{
+.layout-parent {
     height: 200vh;
     display: grid;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 2fr;
- 
 }
 
-.layout-child{
-
-    /* background-color: #0056b3; */
-    /* border: white solid 2px; */
+.layout-child {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-
 }
 
-
-
-#child1{
+#child1 {
     grid-column: 1 / 5;
     grid-row: 1 / 4;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 2fr;
-
+    position: relative;
+    overflow: hidden;
 }
 
+#child1 img {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
-/* parent layout inner child */
-.inner-cell{
-
+.inner-cell {
     padding: 40px;
-    border-width:  0.5em 0.5em 0 0; /* top right bottom left */
-    border-style: solid  inset double;
-    border-color: rgb(255, 255, 255) rgb(255, 255, 255) ;    
+    border-width: 0.5em 0.5em 0 0;
+    border-style: solid inset double;
+    border-color: rgb(255, 255, 255) rgb(255, 255, 255);
     grid-column: 1 / 3;
     grid-row: 4 / 4;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     column-gap: 4em;
-    
-
-
-
+    position: relative;
+    z-index: 1;
 }
-
-
 
 
 /* media query for layout 1----------------------------- */
@@ -988,11 +987,11 @@ tsting */
 
 
 #special-child{
-    background-image: url(img/gardens/7.jpg);
+    /* background-image: url(/gardening-website-template/img/gardens/6.jpg); */
 } 
 
 #special-child4{
-    background-image: url(img/gardens/8.jpg);
+    /* background-image: url(/gardening-website-template/img/gardens/5.jpg); */
 }
 
 /* hover effecr in it  */
