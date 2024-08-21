@@ -848,12 +848,21 @@ tsting */
   }
 /* testing button */
 
+@media (max-width:765px) {
+    .custom-shape-divider-top-1722277202{
+        display: none;
+
+
+    }
+    
+    
+}
 
 
 
 /* LAYOUT 1-------------------- */
 .layout-parent {
-    height: 200vh;
+    height: 170vh;
     display: grid;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -2136,7 +2145,7 @@ img .img-joke{
     -webkit-appearance: none;
     height: 40px;
     width: 40px;
-    background: url("img/slider-icon.svg"), rgba(255, 255, 255, 0.3);
+    background: url(img/slider-icon.svg), rgba(255, 255, 255, 0.3);
     border: 3px solid #ffffff;
     border-radius: 50%;
     background-size: contain;
