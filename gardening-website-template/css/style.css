@@ -10,8 +10,8 @@
     background-color: #F2ECDA;
 }
 .bg-gradient-green{
-    background: rgb(79,180,58);
-    background: linear-gradient(90deg, rgba(79,180,58,1) 0%, rgba(37,253,29,1) 50%, rgba(34,135,3,1) 100%);
+    background: rgb(58,180,148);
+    background: linear-gradient(90deg, rgba(58,180,148,1) 0%, rgba(70,123,68,1) 50%, rgba(19,58,33,1) 100%);
 }
 
 body{
