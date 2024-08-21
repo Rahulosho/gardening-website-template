@@ -9,6 +9,10 @@
 .bg-copy{
     background-color: #F2ECDA;
 }
+.bg-gradient-green{
+    background: rgb(79,180,58);
+    background: linear-gradient(90deg, rgba(79,180,58,1) 0%, rgba(37,253,29,1) 50%, rgba(34,135,3,1) 100%);
+}
 
 body{
     font-family: 'Open Sans', Arial, sans-serif; /* Fallback fonts if Open Sans is not available */
