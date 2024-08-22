@@ -115,5 +115,20 @@
 })(jQuery);
 
 
-// test-------------------------
+// test comparison box-------------------------
 
+jQuery(document).ready(function($){
+    //function to check if the .cd-image-container is in the viewport here
+    // ...
+     
+    //make the .cd-handle element draggable and modify .cd-resize-img width according to its position
+    $('.cd-image-container').each(function(){
+       var actual = $(this);
+       drags(actual.find('.cd-handle'), actual.find('.cd-resize-img'), actual);
+    });
+ 
+    //function to upadate images label visibility here
+    // ...
+ });
+ 
+ //draggable funtionality - credits to http://css-tricks.com/snippets/jquery/draggable-without-jquery-ui/

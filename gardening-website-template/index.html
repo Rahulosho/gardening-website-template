@@ -77,6 +77,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="quote.html" class="nav-item nav-link d-lg-none">Free Quote</a>
+                <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="project.html" class="nav-item nav-link">Projects</a>
                 <a href="gallery.html" class="nav-item nav-link">Gallery</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
@@ -357,7 +359,7 @@
 
 
     <!-- Facts Start -->
-    <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
+    <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.png">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
@@ -443,44 +445,30 @@
 
     <!-- Features End -->
 
+
+
 <!-- comparison box here --> 
- <br>
- <div class="container">
-    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-        <p class="fs-5 fw-bold text-primary">Reviving Your Outdoor Space </p>
-        <h1 class="display-5 mb-5">See the Difference</h1>
-    </div>
- </div>
-
-    <div class="justify-content-center row compare-head">
-        <div class="col-4 text-center"><h3>Before</h3></div>
-        <div class="col-4 text-center "><h3>After</h3></div>
-    </div>
-    <br>
-
-
-    <div class="container compare-container">
-        <div class="comparison-container mb-5">
-            <div class="d-flex justify-content-center">
-                <div class="comparison">
-                    <img src="img/image-1.png" alt="Image 1">
-                    <img id="my-img-1" src="img/image-2.png" alt="Image 2">
-                    <input type="range" min="0" max="100" value="50" id="slider-1" oninput="slide('my-img-1', 'slider-1')">
-                </div>
+<div class="container">
+    <div class="row justify-content-center"> <!-- Center the row content -->
+        <!-- First Comparison -->
+        <div class="col-12 col-lg-6 mb-4 d-flex justify-content-center"> <!-- Center the column content -->
+            <div class="alt-container">
+                <img class="alt-image-1" src="img/image-1.png">
+                <img class="alt-image-2" id="my-img-1" src="img/image-2.png">
+                <input class="alt-slider" type="range" min="0" max="100" value="50" id="slider-1" oninput="slide(1)">
             </div>
         </div>
-    
-        <div class="comparison-container">
-            <div class="d-flex justify-content-center">
-                <div  class="comparison">
-                    <img src="img/gardens/img-4.jpg" alt="Image 3">
-                    <img id="my-img-2" src="img/gardens/img-3.jpg" alt="Image 4">
-                    <input type="range" min="0" max="100" value="50" id="slider-2" oninput="slide('my-img-2', 'slider-2')">
-                </div>
+
+        <!-- Second Comparison -->
+        <div class="col-12 col-lg-6 mb-4 d-flex justify-content-center"> <!-- Center the column content -->
+            <div class="alt-container">
+                <img class="alt-image-1" src="img/image-1.png">
+                <img class="alt-image-2" id="my-img-2" src="img/image-2.png">
+                <input class="alt-slider" type="range" min="0" max="100" value="50" id="slider-2" oninput="slide(2)">
             </div>
         </div>
     </div>
-    
+</div>
 
 
 
@@ -522,7 +510,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                            <img class="img-fluid" src="img/landscape/land-3.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
@@ -537,7 +525,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                            <img class="img-fluid" src="img/hedge-trimming/trim-2.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
@@ -566,12 +554,12 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item rounded d-flex h-100">
-                        <!-- <div class="service-img rounded"> isse check krliyo
+                        <div class="service-img rounded">
                             <img class="img-fluid" src="img/service-4.jpg" alt="">
-                        </div> -->
+                        </div>
                         <div class="service-text rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon">
+                                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
                             </div>
                             <h4 class="mb-3">Pressure wash </h4>
                             <p class="mb-4">Revive your surfaces, restore the shine!.</p>
@@ -582,7 +570,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-5.jpg" alt="">
+                            <img class="img-fluid" src="img/tree-net/3.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
@@ -597,11 +585,11 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item rounded d-flex h-100">
                         <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-6.jpg" alt="">
+                            <img class="img-fluid" src="img/rubbish/rub-1.jpg" alt="">
                         </div>
                         <div class="service-text rounded p-5">
                             <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon">
+                                <img class="img-fluid" src="img/icon/icon-rub.png" alt="Icon">
                             </div>
                             <h4 class="mb-3">Rubbish Removal</h4>
                             <p class="mb-4">Say Goodbye to Junk, Hello to Clean! with our quick servicee</p>
@@ -632,18 +620,18 @@
     
                 <!-- Feature List -->
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6 col-md-6">
                         <ul class="feature-list">
                             <li><i class="fas fa-check"></i>9.96 Customer Rating</li>
-                            <li><i class="fas fa-check"></i>20+ gardening award</li>
+                            <li><i class="fas fa-check"></i>Team of Experts                          </li>
                             <li><i class="fas fa-check"></i>Goverment approved</li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 col-md-6">
                         <ul class="feature-list">
                             <li><i class="fas fa-check"></i>1000+ happy customer</li>
-                            <li><i class="fas fa-check"></i>best customer service</li>
-                            <li><i class="fas fa-check"></i>Pest Control</li>
+                            <li><i class="fas fa-check"></i>Best customer service</li>
+                            <li><i class="fas fa-check"></i>Competitive pricing</li>
                         </ul>
                     </div>
                 </div>
@@ -777,6 +765,19 @@
         </div>
     </div>
     <!-- Copyright End -->
+
+    
+<!-- javascripyt for comparison box -->
+ <script>
+function slide(index) {
+    let slideValue = document.querySelector(`#slider-${index}`).value;
+    document.querySelector(`#my-img-${index}`).style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)";
+    console.log("polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)");
+}
+
+ </script>
+
+
 
 
 

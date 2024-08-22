@@ -5,7 +5,11 @@
     --light: #E8F5E9;
     --dark: #0F4229;
     --cream:  #F2ECDA;
+
 }
+
+
+
 .bg-copy{
     background-color: #F2ECDA;
 }
@@ -51,7 +55,6 @@ h6,
 .fw-semi-bold {
     font-weight: 500 !important;
 }
-
 
 /*** Spinner ***/
 #spinner {
@@ -280,7 +283,6 @@ tsting */
 
 
 /*** Facts & Quote ***/
-.facts,
 .quote {
     background: rgba(15, 66, 41, .6);
 }
@@ -925,7 +927,7 @@ tsting */
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 180vh;
+        height: 200vh;
     }
     .layout-child{
        flex-grow: 1;
@@ -934,6 +936,7 @@ tsting */
     
     #child1{
         display: flex;
+        height: 110rem;
 
     }
 
@@ -1796,6 +1799,10 @@ img .img-joke{
     #project-items-text {
         padding: 2vh; /* Adjust padding for smaller screens */
     }
+
+
+
+
 }
 
 
@@ -2089,51 +2096,30 @@ img .img-joke{
     font-size: 1rem;
     color: #6c757d;
 }
-/* comparision box */
-.compare-head {
-    margin-right: 0;
-} 
 
-/* Scoped styles for elements within the .comparison container */
-.comparison * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-/* Base .comparison styles */
-.comparison {
-    width: 95vmin;
+
+
+/* comparision box start */
+.alt-container {
+    height: 60vmin; /* Reduced height for better fit */
+    width: 90vmin;  /* Reduced width for better fit */
     position: relative;
     overflow: hidden;
 }
 
-/* Set different heights for each comparison container */
-.comparison-container:nth-of-type(1) .comparison {
-    height: 70.5vmin; /* Height for the first comparison div */
-}
-
-.comparison-container:nth-of-type(2) .comparison {
-    height: 90.5vmin; /* Height for the second comparison div */
-}
-
-.comparison img {
+.alt-image-1,
+.alt-image-2 {
     width: 100%;
     height: 100%;
     position: absolute;
-    object-fit: cover; /* Ensure images cover the container while maintaining their aspect ratio */
 }
 
-/* Apply clipping to specific images */
-#my-img-1, #my-img-2 {
+.alt-image-2 {
     clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
 }
 
-
-
-
-/* Slider styling */
-#slider-1, #slider-2 {
+.alt-slider {
     position: relative;
     -webkit-appearance: none;
     width: calc(100% + 40px);
@@ -2143,22 +2129,28 @@ img .img-joke{
     outline: none;
 }
 
-/* Slider thumb styling */
-#slider-1::-webkit-slider-thumb, 
-#slider-2::-webkit-slider-thumb {
+.alt-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 40px;
     width: 40px;
-    background: url(img/slider-icon.svg), rgba(255, 255, 255, 0.3);
-    border: 3px solid #ffffff;
-    border-radius: 50%;
-    background-size: contain;
+    background-color: #ffffff19; /* Background color of the diamond */
+    border: 3px solid #ffffff; /* Border color of the diamond */
+    border-radius: 0; /* Remove border radius to make it square */
+    transform: rotate(45deg); /* Rotate to make it diamond shape */
     cursor: pointer;
 }
 
+.alt-slider::-moz-range-thumb {
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff32; /* Background color of the diamond */
+    border: 3px solid #ffffff36; /* Border color of the diamond */
+    border-radius: 0; /* Remove border radius to make it square */
+    transform: rotate(45deg); /* Rotate to make it diamond shape */
+    cursor: pointer;
+}
 
-
-
+/* comparison box end */
 
 /* terms and condition  */
 .terms-container {
