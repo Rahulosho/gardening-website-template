@@ -3,18 +3,23 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Gardener - Gardening Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <title>Get a Quote | The Gardener & Co - Gold Coast</title>
+    <link rel="icon" href="img/logo-s.png" type="image/png">
 
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="keywords"
+        content="request a quote, garden services quote, landscaping quote, garden maintenance quote, Gold Coast gardening services, book gardening services, The Gardener & Co, garden service estimate, landscaping booking">
+    <meta name="description"
+        content="Request a quote for your garden and landscaping needs with The Gardener & Co in Gold Coast. Our streamlined booking process ensures you receive a detailed estimate for your garden services, tailored to your specific requirements. Start your journey to a beautiful outdoor space today.">
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -30,16 +35,27 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    
-    <script type="text/javascript">
-        emailjs.init('915hs_CQW8eBM4lwc')
-    </script>
+
+    <!-- custom css of the page  -->
+    <style>
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+    </style>
+
 </head>
 
-<body >
+<body>
+
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
     <!-- Spinner End -->
@@ -55,16 +71,19 @@
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <span class="far fa-envelope me-2"></span>
-                    <span>designol@yahoo.com​</span>
+                    <span>thegardenernco@gmail.com</span>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
                     <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href="https://www.facebook.com/profile.php?id=61561198255134"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href="https://x.com/thegardenernco"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light" href="https://www.facebook.com/profile.php?id=61561198255134"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href="https://x.com/thegardenernco"><i
+                            class="fab fa-twitter"></i></a>
                     <a class="btn btn-link text-light" href="https://wa.link/5ai3x4"><i class="fab fa-whatsapp"></i></a>
-                    <a class="btn btn-link text-light" href="https://www.instagram.com/thegardenernco/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-link text-light" href="https://www.instagram.com/thegardenernco/"><i
+                            class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -73,7 +92,7 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 " >
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0  ">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h4 class="m-0">the Gardener</h4>
         </a>
@@ -89,7 +108,7 @@
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <div class="nav-item dropdown">
                     <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                    <div class="dropdown-menu bg-light m-0">
+                    <div class="dropdown-menu bg-light m-0 custom-dropdown">
                         <a href="mowning.html" class="dropdown-item">Lawn Mowing</a>
                         <a href="maintenance.html" class="dropdown-item">Garden Maintenance</a>
                         <a href="trimming.html" class="dropdown-item">Hedge Trimming & Pruning</a>
@@ -106,79 +125,105 @@
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="quote.html" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block ">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="quote.html" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block ">Get A Quote<i
+                    class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
 
 
     <!-- Page Header Start -->
-    <!-- Page Header End -->
+    <img src="img/carousel-2.jpg" class="img-full-cover background-image " alt="">
+    <!-- my form---------- -->
+    <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;"
+        onload="if(submitted){window.location='thank-you.html';}"></iframe>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="form-container">
+                    <h2 class="text-center mb-4">Gardening Service Request</h2>
+                    <form id="gardeningForm" class="row"
+                        action="https://docs.google.com/forms/d/e/1FAIpQLSe1wCB114Bne5H9o_1DdBcvsJnCAem59zbuKJe4jA6XT4GkWg/formResponse"
+                        method="post" target="hiddenConfirm" onsubmit="submitted=true">
+                        <div class="mb-3 col-lg-6">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="entry.2005620554" value="rahul"
+                                required>
+                        </div>
+                        <div class="mb-3 col-lg-6">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="entry.357108204" value="sharma"
+                                required>
+                        </div>
+                        <div class="mb-3 col-lg-6">
+                            <label for="email" class="form-label ">Email</label>
+                            <input type="email" class="form-control" id="email" name="entry.1045781291"
+                                value="rahulrajnish199@gmail.com" required>
+                        </div>
+                        <div class="mb-3 col-lg-6">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="entry.1745968490" value="9315578877"
+                                required>
+                        </div>
 
+                        <div class="mb-3 col-lg-12">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" name="entry.1065046570"
+                                value="jonk village , ramjhula" required>
+                        </div>
+                        <div class="mb-3 col-lg-6">
+                            <label for="service" class="form-label">Type of Service</label>
+                            <select class="custom-select" id="service" name="entry.879573936" required>
+                                <option value="Garden Maintenance">Garden Maintenance</option>
+                                <option value="Gutter Cleaning">Gutter Cleaning</option>
+                                <option value="Hedge Trimming & Pruning">Hedge Trimming & Pruning</option>
+                                <option value="Landscaping">Landscaping</option>
+                                <option value="Lawn Mowing">Lawn Mowing</option>
+                                <option value="Pressure Wash">Pressure Wash</option>
+                                <option value="Rubbish Removal">Rubbish Removal</option>
+                                <option value="Tree Loping">Tree Loping</option>
+                                <option value="Tree Net">Tree Net</option>
+                            </select>
+                        </div>
 
-
-
-<!-- my form---------- -->
-<div class="container my-5">
-    <div class="custom-container mx-auto">
-        <h2 class="text-center text-success">Gardening Service Request</h2>
-        <form id="serviceForm">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control custom-input" id="name" name="name-form" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control custom-input" id="email" name="email-form" required>
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" class="form-control custom-input" id="phone" name="phone-form" required>
-            </div>
-
-            <div class="form-group">
-                <label for="service">Type of Service:</label>
-                <select class="form-control custom-input" id="service" name="service-form" required>
-                    <option value="">Select a service</option>
-                    <option value="Lawn Mowing">Lawn Mowing</option>
-                    <option value="Garden Maintenance">Garden Maintenance</option>
-                    <option value="Tree Trimming">Tree Trimming</option>
-                    <option value="Planting">Planting</option>
-                    <option value="Weed Control">Weed Control</option>
-                    <option value="Fertilization">Fertilization</option>
-                    <option value="Pest Control">Pest Control</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="extra">Additional Questions or Services:</label>
-                <textarea class="form-control custom-input" id="extra" name="extra" rows="4"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-success btn-block custom-button">Submit</button>
-        </form>
-
-        <div class="mt-4">
-            <div class="contact-card">
-                <h3 class="text-center text-success">Contact Us</h3>
-                <p><strong>Email:</strong> info@gardeningservice.com</p>
-                <p><strong>Phone:</strong> +123 456 7890</p>
-                <p><strong>Location:</strong> <a href="https://maps.google.com" target="_blank" class="text-success font-weight-bold">Find us on Google Maps</a></p>
+                        <div class="mb-3 col-lg-6">
+                            <label class="form-label">Contact Preference</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Phone" id="phonePreference"
+                                    name="entry.1166974658" checked>
+                                <label class="form-check-label" for="phonePreference">
+                                    Phone
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Email" id="emailPreference"
+                                    name="entry.1166974658" checked>
+                                <label class="form-check-label" for="emailPreference">
+                                    Email
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-3 col-lg-12">
+                            <label for="additional" class="form-label">Additional Questions</label>
+                            <textarea class="form-control" id="additional" name="entry.839337160" rows="3"
+                                placeholder="Let's make your vision come to reality !"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-success col-6 btn-submit">Submit Request</button>
+                        </div>
+                    </form>
+                    <div class="contact-info">
+                        <p><strong>Contact Us:</strong></p>
+                        <p>Email: thegardenernco@gmail.com </p>
+                        <p>Phone: +61 460 941 392</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- <div class="alert alert-success alert-dismissible fade" id="alertBox" role="alert">
-    <strong>Thank you!</strong> We will get in touch with you within 24 hours.
-    <button type="button" class="close" aria-label="Close" onclick="closeAlert()">
-        <span aria-hidden="true">&times;</span>
-    </button>
-</div>
- -->
 
-<!-- my form  -->
+
+    <!-- my form  -->
 
 
 
@@ -190,14 +235,23 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2 d-flex "><i class="fa fa-map-marker-alt me-3 align-content-lg-center"></i><a href="" class="text-white ">Gold Coast Q​ueensland</a></p>
-                    <a href="https://api.whatsapp.com/send?phone=61460941392"><p class="mb-2 text-white"><i class="fa fa-phone-alt me-3"></i>+61 460 941 392</p></a>
+                    <p class="mb-2 d-flex "><i class="fa fa-map-marker-alt me-3 align-content-lg-center"></i><a
+                            href="https://maps.app.goo.gl/rAJ3f6ijm6RGkCPv5" class="text-white ">Gold Coast
+                            Q​ueensland</a></p>
+                    <a href="https://api.whatsapp.com/send?phone=61460941392">
+                        <p class="mb-2 text-white"><i class="fa fa-phone-alt me-3"></i>+61 460 941 392</p>
+                    </a>
                     <p class="mb-2 text-white"><i class="fa fa-envelope me-3"></i>thegardenernco@gmail.com</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://x.com/thegardenernco"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.facebook.com/profile.php?id=61561198255134"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.youtube.com/@thegardenernco"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.instagram.com/thegardenernco/"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="https://x.com/thegardenernco"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="https://www.facebook.com/profile.php?id=61561198255134"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="https://www.youtube.com/@thegardenernco"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                            href="https://www.instagram.com/thegardenernco/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -232,11 +286,11 @@
                 </div>
             </div>
         </div>
-        <div class="custom-shape-divider-top-1722277202">
+        <!-- <div class="custom-shape-divider-top-1722277202">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
             </svg>
-        </div>
+        </div> -->
 
     </div>
     <!-- Footer End -->
@@ -256,10 +310,12 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
@@ -273,32 +329,13 @@
 
     <!-- Template Javascript -->
     <script>
-        // my form
-
-        document.getElementById('serviceForm').addEventListener('submit', function (event) {
-            event.preventDefault();  // Prevent the default form submission behavior
-
-            // Prepare the parameters for EmailJS
-            let parms = {
-                name: document.getElementById("name").value,
-                email: document.getElementById("email").value,
-                phone: document.getElementById("phone").value,
-                service: document.getElementById("service").value,
-                extra: document.getElementById("extra").value
-            };
-
-            // Send the email using EmailJS
-            emailjs.send("service_cs6ypys", "template_7r2s4op", parms)
-                .then(function (response) {
-                    alert("Email sent successfully!");
-
-                    // Redirect to thank you page after successful email submission
-                    window.location.href = 'thank-you.html';
-                }, function (error) {
-                    alert("Failed to send email. Please try again later.");
-                });
+        var submitted = false;
+        document.getElementById('gardeningForm').addEventListener('submit', function () {
+            document.querySelector('button[type="submit"]').classList.remove('btn-success');
+            document.querySelector('button[type="submit"]').classList.add('btn-primary');
         });
     </script>
+
 
     <script src="js/main.js"></script>
 </body>

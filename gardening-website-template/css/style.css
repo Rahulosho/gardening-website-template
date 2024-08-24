@@ -5,9 +5,9 @@
     --light: #E8F5E9;
     --dark: #0F4229;
     --cream:  #F2ECDA;
+    --darkCream:#7d7047;
 
 }
-
 
 
 .bg-copy{
@@ -150,6 +150,20 @@ h6,
     overflow-y: auto;
 }
 
+/* CSS to adjust the order on small devices */
+@media (max-width: 992px) { /* Adjust for small devices, breakpoint can be changed */
+    .navbar-nav .dropdown {
+        order: 2; /* Set order to appear after the 'Projects' link */
+    }
+    .navbar-nav .nav-link[href="project.html"] {
+        order: 1; /* Projects link order */
+    }
+    .navbar-nav .nav-link[href="gallery.html"],
+    .navbar-nav .nav-link[href="about.html"],
+    .navbar-nav .nav-link[href="contact.html"] {
+        order: 3; /* Adjust orders for other links accordingly */
+    }
+}
 
 
 
@@ -982,7 +996,7 @@ tsting */
 
 
 #special-child1{
-    background-color: #BAB67D;
+    background-color: var(--darkCream);
     padding: 32px;
 
 
@@ -1002,13 +1016,6 @@ tsting */
 
 
 
-#special-child{
-    /* background-image: url(/gardening-website-template/img/gardens/6.jpg); */
-} 
-
-#special-child4{
-    /* background-image: url(/gardening-website-template/img/gardens/5.jpg); */
-}
 
 /* hover effecr in it  */
 /* Ensure each child div is relative and has overflow hidden */
@@ -1236,6 +1243,7 @@ img .img-joke{
     display: grid;
     
 }
+
 #div2 {
     position: relative;
     top: 50px;
@@ -1345,6 +1353,7 @@ img .img-joke{
     }
 
 
+
 }
 
 /* services note --------------- */
@@ -1357,8 +1366,9 @@ img .img-joke{
 
 @media screen and (max-width: 600px){
     .services-note{
-        height: 80vh;
+        height: 50vh;
     }
+
 }
 
 
@@ -1389,7 +1399,11 @@ img .img-joke{
         margin-left: auto;
     
     
-    }    
+    }   
+    .about-long-img img {
+        display: none;
+    }
+ 
 }
 
 @media screen and (min-width:200px) {
@@ -1400,6 +1414,7 @@ img .img-joke{
 @media screen and (min-width:769px) {
     .a { order: 1; }
     .b { order: 2; }   
+
 }
 
 /* services note --------------- */
@@ -1897,31 +1912,9 @@ img .img-joke{
         font-size: 16px;
     }
 }
-/* my form  */
 
 
 /* Form Styles */
-.custom-container {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-}
-
-.form-control {
-    border-radius: 5px;
-}
-
-.btn-success {
-    background-color: #2d7d4d;
-    border: none;
-}
-
-.btn-success:hover {
-    background-color: #245f3d;
-}
 
 /* Thank You Page Styles */
 .thank-you-container {
@@ -2187,3 +2180,179 @@ img .img-joke{
     text-decoration: underline;
 }
 /* end terms and condition */
+
+
+
+
+/* my form  */
+.form-container {
+    background: white;    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+/* Custom styles for the dropdown */
+.custom-select {
+    appearance: none;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px 40px 10px 15px; /* Adjusted padding for text and icon */
+    font-size: 16px;
+    background-color: white;
+    background-image: url('https://img.icons8.com/ios-glyphs/30/000000/expand-arrow--v1.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Positioning the dropdown arrow */
+    background-size: 15px;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    height: auto; /* Ensures the height is enough to show the text */
+    color: #212529; /* Text color */
+}
+
+
+.custom-select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    outline: none;
+}
+
+.btn-submit {
+    transition: background-color 0.3s;
+}
+
+.btn-submit:active {
+    background-color: #218838; /* Change button color when clicked */
+}
+
+
+
+/* project section sub headings */
+/* Specific styles for case study boxes */
+.case-study-box {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* Image inside the case study box */
+.case-study-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Title of the case study */
+.case-study-title {
+    margin: 16px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Description of the case study */
+.case-study-description {
+    margin: 16px;
+    color: #555;
+}
+
+/* Hover effect for case study boxes */
+.case-study-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 128, 0, 0.2);
+    border-color: green;
+}
+
+
+/* sub projects page */
+.custom-header {
+    padding: 30px 15px;
+}
+.custom-section {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.custom-img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+}
+.custom-list li {
+    margin-bottom: 10px;
+}
+
+
+/* Media Queries for Smaller Devices */
+@media (max-width: 768px) {
+    .custom-header {
+        padding: 20px;
+        font-size: 1.5em;
+    }
+    .custom-section {
+        padding: 15px;
+    }
+    .custom-button {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-header {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+    .custom-section {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+
+/* bloging pages */
+.header-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+.blog-heading {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--secondary);
+}
+.blog-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.blog-content h2 {
+    color: var(--dark);
+    margin-top: 1.5rem;
+}
+.blog-content p {
+    margin-bottom: 1.5rem;
+}
