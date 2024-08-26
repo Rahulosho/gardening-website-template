@@ -124,13 +124,29 @@ h6,
 }
 
 .navbar .navbar-nav .nav-link {
-    margin-right: 35px;
+    margin-right: 38px;
     padding: 25px 0;
     color: var(--dark);
-    font-size: 18px;
+    font-size: 18px ;
     font-weight: 500;
+   
     outline: none;
 }
+
+
+@media (max-width: 1055px) and (min-width: 768px){
+    .fa-arrow-right {
+        display: none;
+    }
+    .navbar .navbar-nav .nav-link {
+        margin-right: 30px;
+        font-size: 15px ;
+       
+        outline: none;
+    }
+    
+}
+
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
@@ -196,6 +212,12 @@ h6,
         opacity: 1;
     }
 }
+
+
+/* media query for navabar button adjust */
+
+
+
 
 /* my custom code for header padding */
 .carousel-div{
